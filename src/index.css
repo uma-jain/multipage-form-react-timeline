@@ -17,10 +17,6 @@ code {
   padding: 30px;
 }
 
-button.MuiButton-containedSecondary {
-  margin-bottom: 10px;
-}
-
 .box {
   margin: auto;
   display: flex;
