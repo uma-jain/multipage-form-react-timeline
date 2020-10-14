@@ -77,7 +77,7 @@ export class UserForm extends Component {
     const { firstName, lastName, email, occupation, city, bio } = this.state;
     const values = { firstName, lastName, email, occupation, city, bio };
     return (
-      <div style={{ margin: "auto", width: "800px" }}>
+      <div class="container">
         <Timeline step={this.state.step - 1} />
         <div style={{ margin: "auto", width: "400px" }}>{comp(step)}</div>
       </div>

@@ -49,14 +49,15 @@ export class FormPersonalDetails extends Component {
             fullWidth
           />
           <br />
+          <div class="box">
+            <Button color="secondary" variant="contained" onClick={this.back}>
+              Back
+            </Button>
 
-          <Button color="secondary" variant="contained" onClick={this.back}>
-            Back
-          </Button>
-
-          <Button color="primary" variant="contained" onClick={this.continue}>
-            Continue
-          </Button>
+            <Button color="primary" variant="contained" onClick={this.continue}>
+              Continue
+            </Button>
+          </div>
         </>
       </MuiThemeProvider>
     );
