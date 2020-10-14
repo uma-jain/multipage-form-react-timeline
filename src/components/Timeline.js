@@ -21,7 +21,18 @@ const useStyles = makeStyles((theme) => ({
 function getSteps() {
   return ["Enter User Detail", "Enter Ocupation", " Preview"];
 }
-
+function getStepContent(step) {
+  switch (step) {
+    case 0:
+      return "Select campaign settings...";
+    case 1:
+      return "What is an ad group anyways?";
+    case 2:
+      return "This is the bit I really care about!";
+    default:
+      return "Unknown step";
+  }
+}
 export default function HorizontalLinearStepper({ step }) {
   // alert(step);
   const classes = useStyles();
@@ -41,6 +52,8 @@ export default function HorizontalLinearStepper({ step }) {
           );
         })}
       </Stepper>
+      <Typography>{getStepContent(step)}</Typography>
+
       <div>
         {step === steps.length ? (
           <div>
